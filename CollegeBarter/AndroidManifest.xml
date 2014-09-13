@@ -26,10 +26,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.hacks.collegebarter.loginandsignup.LogInActivity"
+            android:name=".loginandsignup.LogInActivity"
             android:label="@string/title_activity_log_in" >
         </activity>
-     
+        <activity
+            android:name="com.hacks.collegebarter.loginandsignup.SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
     </application>
 
 </manifest>

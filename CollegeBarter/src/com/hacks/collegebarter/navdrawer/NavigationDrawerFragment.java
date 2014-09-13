@@ -2,8 +2,6 @@ package com.hacks.collegebarter.navdrawer;
 
 import java.util.ArrayList;
 
-import com.hacks.collegebarter.R;
-
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
@@ -23,6 +21,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.hacks.collegebarter.R;
+import com.hacks.collegebarter.fragments.PlaceholderFragment;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation
@@ -246,7 +247,13 @@ public class NavigationDrawerFragment extends Fragment {
 		}
 		if (mCallbacks != null) {
 			mCallbacks.onNavigationDrawerItemSelected(position);
-		}
+		} 
+		Fragment changeFragment = new PlaceholderFragment();
+		Bundle args = new Bundle();
+		args.putInt(PlaceholderFragment.ARG_SECTION_NUMBER, position);
+		
+        
+   
 	}
 
 	@Override

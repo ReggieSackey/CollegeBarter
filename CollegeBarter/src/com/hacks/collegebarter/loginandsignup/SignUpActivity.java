@@ -82,11 +82,10 @@ public class SignUpActivity extends Activity {
 		if (id == R.id.action_sign_in) {
 			// create new parseUser object
 			ParseUser newUser = new ParseUser();
-
 			// get the strings stored in userName and password field
-			usernameText = userNameField.getText().toString();
-			emailText = emailField.getText().toString();
-			passwordText = passwordField.getText().toString();
+			usernameText = userNameField.getText().toString().trim();
+			emailText = emailField.getText().toString().trim();
+			passwordText = passwordField.getText().toString().trim();
 
 			// set parse username, email and password fields
 			newUser.setUsername(usernameText);

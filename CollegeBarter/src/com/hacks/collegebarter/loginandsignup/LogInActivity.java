@@ -8,9 +8,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.hacks.collegebarter.R;
+import com.hacks.collegebarter.navdrawer.MainAppActivity;
+import com.parse.LogInCallback;
 import com.parse.Parse;
+import com.parse.ParseException;
+import com.parse.ParseUser;
 
 public class LogInActivity extends Activity {
 	/* Variables storing widget id's */
@@ -19,7 +24,7 @@ public class LogInActivity extends Activity {
 	EditText passwordField;
 	Button signUpButton;
 	Button logInButton;
-	String userNameText;
+	String usernameText;
 	String passwordText;
 
 	@Override
@@ -32,7 +37,7 @@ public class LogInActivity extends Activity {
 		passwordField = (EditText) findViewById(R.id.passwordField);
 		signUpButton = (Button) findViewById(R.id.signUpButton);
 		logInButton = (Button) findViewById(R.id.logInId);
-
+		
 		// Parse Initialize
 		Parse.initialize(this, "yGAHbDZTw9xuh1NHC5YMLoif5u9qgYoOGak2nd62",
 				"BY79vcfUFtS9WTRCdg9Vf2ovnLnYzPnYk2waPwbq");
@@ -41,10 +46,39 @@ public class LogInActivity extends Activity {
 
 		signUpButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				
-				//switch to new activity
-				Intent myIntent = new Intent(LogInActivity.this, SignUpActivity.class);
-		        startActivity(myIntent);
+				// switch to new activity
+				 Intent signUpIntent = new Intent(LogInActivity.this,
+							SignUpActivity.class);
+				startActivity(signUpIntent);
+			}
+		});
+
+		/* When logIn button is clicked */
+
+		logInButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				// get strings from respective EditTextFields
+				usernameText = userNameField.getText().toString().trim();
+				passwordText = passwordField.getText().toString().trim();
+				// login in background
+				ParseUser.logInInBackground(usernameText, passwordText,
+						new LogInCallback() {
+							public void done(ParseUser user, ParseException e) {
+								if (user != null) {
+									// move to main
+									Intent logInIntent = new Intent(LogInActivity.this,
+											MainAppActivity.class);
+									startActivity(logInIntent);
+									finish();
+								}// if user exist
+								else {
+									//if userName not found
+									if(e.getCode() == ParseException.LINKED_ID_MISSING);
+									Toast.makeText(LogInActivity.this,
+											"account does not exist", Toast.LENGTH_LONG).show();
+								}
+							}
+						});
 			}
 		});
 

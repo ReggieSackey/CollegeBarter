@@ -4,7 +4,7 @@ public class NavDrawerItems {
 
 	private String title;
 	private int icon;
-	private String count = "0";
+	
 
 	public NavDrawerItems() {
 	}
@@ -30,8 +30,6 @@ public class NavDrawerItems {
 		this.icon = icon;
 	}
 
-	public void setCount(String count) {
-		this.count = count;
-	}
+	
 
 }

@@ -12,7 +12,6 @@ import android.widget.Toast;
 import com.hacks.collegebarter.R;
 import com.parse.Parse;
 import com.parse.ParseException;
-import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 

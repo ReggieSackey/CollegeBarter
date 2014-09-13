@@ -1,16 +1,12 @@
 package com.hacks.collegebarter.loginandsignup;
 
-import com.hacks.collegebarter.R;
-import com.hacks.collegebarter.R.id;
-import com.hacks.collegebarter.R.layout;
-import com.hacks.collegebarter.R.menu;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 import android.widget.EditText;
+
+import com.hacks.collegebarter.R;
 
 public class SignUpActivity extends Activity {
 

@@ -22,8 +22,8 @@ public class LogInActivity extends Activity {
 	
 	EditText userNameField;
 	EditText passwordField;
-	Button signUp;
-	Button logIn;
+	Button signUpButton;
+	Button logInButton;
 	String userNameText;
 	String passwordText;
 
@@ -36,8 +36,8 @@ public class LogInActivity extends Activity {
 		// set widget id's
 		userNameField = (EditText) findViewById(R.id.usernameField);
 		passwordField = (EditText) findViewById(R.id.passwordField);
-		signUp = (Button) findViewById(R.id.signUpButton);
-		logIn = (Button) findViewById(R.id.logInId);
+		signUpButton = (Button) findViewById(R.id.signUpButton);
+		logInButton = (Button) findViewById(R.id.logInId);
 		
 		//Parse Initialize
 		 Parse.initialize(this, "yGAHbDZTw9xuh1NHC5YMLoif5u9qgYoOGak2nd62", "BY79vcfUFtS9WTRCdg9Vf2ovnLnYzPnYk2waPwbq");
@@ -46,7 +46,7 @@ public class LogInActivity extends Activity {
  
 		 /* When signUp button is clicked */
 		 
-		 signUp.setOnClickListener(new View.OnClickListener(){
+		 signUpButton.setOnClickListener(new View.OnClickListener(){
 			 public void onClick(View v){
 				 // create a new Parse User
 			ParseUser newUser = new ParseUser();
@@ -68,7 +68,7 @@ public class LogInActivity extends Activity {
 						Toast.makeText(LogInActivity.this, "Going to app", Toast.LENGTH_SHORT).show();
 					} //if sigUp passed
 					else if(e.getCode() == ParseException.USERNAME_TAKEN){
-				        //Toast.makeText(L.show();	
+				        Toast.makeText(LogInActivity.this, "Username already taken", Toast.LENGTH_LONG).show();	
 					}//userName is taken
 				}
 	     	});	 

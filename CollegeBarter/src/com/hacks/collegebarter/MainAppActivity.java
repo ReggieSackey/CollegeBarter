@@ -8,6 +8,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.hacks.collegebarter.fragments.PlaceholderFragment;
+
 
 public class MainAppActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {

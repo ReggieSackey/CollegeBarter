@@ -1,4 +1,4 @@
-package com.hacks.collegebarter;
+package com.hacks.collegebarter.fragments;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.hacks.collegebarter.MainAppActivity;
+import com.hacks.collegebarter.R;
 
 /**
  * A placeholder fragment containing a simple view.

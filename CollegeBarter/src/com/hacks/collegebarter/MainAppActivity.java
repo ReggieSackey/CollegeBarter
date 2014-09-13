@@ -21,10 +21,6 @@ public class MainAppActivity extends Activity
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
-    //test
-    // test 2
-    // Test 3
-    // test
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */

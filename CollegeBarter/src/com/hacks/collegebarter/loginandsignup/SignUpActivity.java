@@ -18,8 +18,10 @@ public class SignUpActivity extends Activity {
  /* Variables storing widget id's */
 	
 	EditText userNameField;
+	EditText emailField; 
 	EditText passwordField;
 	String userNameText;
+	String emailText;
 	String passwordText;
 	
 	

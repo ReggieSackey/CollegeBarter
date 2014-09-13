@@ -20,13 +20,17 @@
     <array name="item_list">
         <item name="user_cart">My Cart</item>
         <item name="user_sold_items">Items Sold</item>
+        <item name="user_items_tracked">Track \'Em</item>
         <item name="user_following">Following</item>
-        <item name="user_items_tracked">Track\'d Items</item>
         <item name="user_purchase_history">Purchase History</item>
+        <item name="user_profile">My Profile</item>
+        <item name="user_trusted_traders">+Tray\'ders</item>
+        <item name="user_barter_circle">Barter Circle</item>
     </array>
     <array name="navdrawer_icons">
         <item name="ic_cart">@drawable/ic_cart</item>
         <item name="ic_cash">@drawable/ic_banknote</item>
+        <item name="ic_tag_tracking">@drawable/ic_tag_tracking</item>
     </array>
         <string name="Email">Email</string>
 

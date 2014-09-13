@@ -23,7 +23,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.hacks.collegebarter.R;
-import com.hacks.collegebarter.fragments.PlaceholderFragment;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation
@@ -248,10 +247,6 @@ public class NavigationDrawerFragment extends Fragment {
 		if (mCallbacks != null) {
 			mCallbacks.onNavigationDrawerItemSelected(position);
 		} 
-		Fragment changeFragment = new PlaceholderFragment();
-		Bundle args = new Bundle();
-		args.putInt(PlaceholderFragment.ARG_SECTION_NUMBER, position);
-		
         
    
 	}

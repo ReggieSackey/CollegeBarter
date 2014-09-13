@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,39 +6,34 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.hacks.collegebarter.LogInActivity" >
+    tools:context="com.hacks.collegebarter.LogInActivity"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/usernameField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="114dp"
         android:ems="10"
         android:hint="@string/Username"
-        android:inputType="textPersonName" >
-
-    </EditText>
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/passwordField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/usernameField"
-        android:layout_below="@+id/usernameField"
         android:layout_marginTop="51dp"
         android:ems="10"
-        android:inputType="textPassword" 
-        android:hint="@string/Password">
+        android:hint="@string/Password"
+        android:inputType="textPassword" >
 
+        <requestFocus />
     </EditText>
 
     <Button
         android:id="@+id/logInId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/passwordField"
-        android:layout_below="@+id/passwordField"
         android:layout_marginTop="32dp"
         android:text="@string/user_logIn" />
 
@@ -46,9 +41,7 @@
         android:id="@+id/signUpButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/logInId"
-        android:layout_below="@+id/logInId"
         android:layout_marginTop="25dp"
         android:text="@string/user_signUp" />
 
-</RelativeLayout>
+</LinearLayout>

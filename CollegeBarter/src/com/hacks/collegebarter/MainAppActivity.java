@@ -67,6 +67,7 @@ public class MainAppActivity extends Activity
             case 5:
             	mTitle = getString(R.string.user_sold_items);
             	break;
+
         }
     }
 

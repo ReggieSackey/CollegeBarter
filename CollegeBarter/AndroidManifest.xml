@@ -27,7 +27,7 @@
             android:label="@string/title_activity_log_in" >
         </activity>
         <activity
-            android:name=".LogInActivityy"
+            android:name=".LogInActivity"
             android:label="@string/title_activity_log_in_activityy" >
         </activity>
         <activity

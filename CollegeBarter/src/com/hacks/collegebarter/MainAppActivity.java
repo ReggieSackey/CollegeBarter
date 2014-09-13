@@ -24,6 +24,7 @@ public class MainAppActivity extends Activity
     //test
     // test 2
     // Test 3
+    // test
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */

@@ -1,22 +1,16 @@
 package com.hacks.collegebarter;
 
-import android.app.Activity;
-
 import android.app.ActionBar;
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
+import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
 
 public class MainAppActivity extends Activity
@@ -27,6 +21,7 @@ public class MainAppActivity extends Activity
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
+    //test
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */

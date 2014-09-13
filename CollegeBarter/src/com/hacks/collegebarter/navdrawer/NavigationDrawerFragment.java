@@ -117,6 +117,7 @@ public class NavigationDrawerFragment extends Fragment {
 
 		// Initialize array list to store
 		navDrawerItems = new ArrayList<NavDrawerItems>();
+		
 		// Get fragment names for the list in the drawer
 		navMenuTitles = getResources().getStringArray(R.array.item_list);
 

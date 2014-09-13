@@ -13,9 +13,9 @@
     <string name="Password">Password</string>
     <string name="user_logIn">Log In</string>
     <string name="user_signUp">SignUp</string>
-    <string name="title_activity_log_in_activityy">LogInActivityy</string>
+    <string name="Email">Email</string>
+    <string name="title_activity_cart_fragment">CartFragment</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
-    <string name="title_activity_log_in_activity2">LogInActivity2</string>
 
     <array name="item_list">
         <item name="user_cart">My Cart</item>
@@ -32,9 +32,7 @@
         <item name="ic_cash">@drawable/ic_banknote</item>
         <item name="ic_tag_tracking">@drawable/ic_tag_tracking</item>
         <item name="ic_following">@drawable/ic_following</item>
+        <item name="ic_purchase_history">@drawable/ic_purchase_history</item>
     </array>
-
-    <string name="Email">Email</string>
-    <string name="title_activity_cart_fragment">CartFragment</string>
 
 </resources>

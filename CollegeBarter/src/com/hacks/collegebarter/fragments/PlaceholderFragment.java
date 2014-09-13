@@ -28,6 +28,7 @@ public class PlaceholderFragment extends Fragment {
         PlaceholderFragment fragment = new PlaceholderFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+        
         fragment.setArguments(args);
         return fragment;
     }
@@ -38,6 +39,7 @@ public class PlaceholderFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
+    	
         View rootView = inflater.inflate(R.layout.fragment_main_app, container, false);
         return rootView;
     }

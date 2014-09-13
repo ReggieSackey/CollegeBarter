@@ -11,6 +11,10 @@ import android.view.MenuItem;
 
 import com.hacks.collegebarter.R;
 import com.hacks.collegebarter.fragments.CartFragment;
+import com.hacks.collegebarter.fragments.FollowingFragment;
+import com.hacks.collegebarter.fragments.PlaceholderFragment;
+import com.hacks.collegebarter.fragments.SoldItemsFragment;
+import com.hacks.collegebarter.fragments.TrackItemsFragment;
 
 public class MainAppActivity extends Activity implements
 		NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -48,41 +52,48 @@ public class MainAppActivity extends Activity implements
 	public void onNavigationDrawerItemSelected(int position) {
 		// Create fragments
 		Fragment changeFragments = null;
-
 		FragmentManager fragmentManager = getFragmentManager();
 
+		// Case to change fragments on item selected from the nav drawer
 		switch (position) {
 		case 0:
 			changeFragments = new CartFragment();
 			break;
 		case 1:
-
+			changeFragments = new SoldItemsFragment();
+			break;
+		case 2:
+			changeFragments = new TrackItemsFragment();
+			break;
+		case 3:
+			changeFragments = new FollowingFragment();
+			break;
 		}
 
 		fragmentManager.beginTransaction()
-				.replace(R.id.container, changeFragments).commit();
+				.replace(R.id.container, PlaceholderFragment.newInstance(position )).commit();
+		getActionBar().setTitle(mTitle);
 
 	}
 
 	public void onSectionAttached(int number) {
 		fragmentNames = getResources().getStringArray(R.array.item_list);
 		switch (number) {
-		case 1:
+		case 0:
 			mTitle = fragmentNames[0];
 			break;
-		case 2:
+		case 1:
 			mTitle = fragmentNames[1];
 			break;
-		case 3:
+		case 2:
 			mTitle = fragmentNames[2];
 			break;
-		case 4:
+		case 3:
 			mTitle = fragmentNames[3];
 			break;
-		case 5:
+		case 4:
 			mTitle = fragmentNames[4];
 			break;
-
 		}
 	}
 
@@ -90,6 +101,7 @@ public class MainAppActivity extends Activity implements
 		ActionBar actionBar = getActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
 		actionBar.setDisplayShowTitleEnabled(true);
+
 		actionBar.setTitle(mTitle);
 	}
 

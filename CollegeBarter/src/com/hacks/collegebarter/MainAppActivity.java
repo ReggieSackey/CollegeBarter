@@ -24,6 +24,8 @@ public class MainAppActivity extends Activity
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
+    
+    // Test to commit;
     private CharSequence mTitle;
     private String[] fragmentNames;
 

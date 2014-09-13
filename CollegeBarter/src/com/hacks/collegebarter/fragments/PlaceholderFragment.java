@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.hacks.collegebarter.MainAppActivity;
 import com.hacks.collegebarter.R;
+import com.hacks.collegebarter.navdrawer.MainAppActivity;
 
 /**
  * A placeholder fragment containing a simple view.

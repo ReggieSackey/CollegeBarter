@@ -2,14 +2,9 @@
 <resources>
 
     <string name="app_name">CollegeBarter</string>
-    <string name="user_cart">My Cart</string>
-    <string name="user_following">Following</string>
-    <string name="user_items_tracked">Track\'d Items</string>
-    <string name="user_sold_items">Items Sold</string>
-    <string name="user_purchase_history">Purchase History</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="action_example">Example action</string>
+    <string name="image_desc">Fragment Icon</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_log_in">LogInActivity</string>
     <string name="hello_world">Hello world!</string>
@@ -20,5 +15,17 @@
     <string name="title_activity_log_in_activityy">LogInActivityy</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="title_activity_log_in_activity2">LogInActivity2</string>
+
+    <array name="item_list">
+        <item name="user_cart">My Cart</item>
+        <item name="user_sold_items">Items Sold</item>
+        <item name="user_following">Following</item>
+        <item name="user_items_tracked">Track\'d Items</item>
+        <item name="user_purchase_history">Purchase History</item>
+    </array>
+    <array name="navdrawer_icons">
+        <item name="ic_cart">@drawable/ic_cart</item>
+        <item name="ic_cash">@drawable/ic_banknote</item>
+    </array>
 
 </resources>

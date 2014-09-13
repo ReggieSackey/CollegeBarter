@@ -8,48 +8,47 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hacks.collegebarter.LogInActivity" >
 
-    <Button
-        android:id="@+id/logInButton"
+    <EditText
+        android:id="@+id/usernameField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/editText2"
-        android:layout_marginTop="34dp"
-        android:text="@string/Login" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="114dp"
+        android:ems="10"
+        android:hint="@string/Username"
+        android:inputType="textPersonName" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameField"
+        android:layout_below="@+id/usernameField"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:hint="@string/Password">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/logInId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordField"
+        android:layout_below="@+id/passwordField"
+        android:layout_marginTop="32dp"
+        android:text="@string/user_logIn" />
 
     <Button
         android:id="@+id/signUpButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/logInButton"
-        android:layout_below="@+id/logInButton"
-        android:layout_marginTop="32dp"
-        android:text="@string/SignUp" />
-
-    <EditText
-        android:id="@+id/userNameText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="90dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/Username" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/userNameText"
-        android:layout_below="@+id/userNameText"
-        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/logInId"
+        android:layout_below="@+id/logInId"
         android:layout_marginTop="25dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="@string/Password" >
-
-        <requestFocus />
-    </EditText>
+        android:text="@string/user_signUp" />
 
 </RelativeLayout>

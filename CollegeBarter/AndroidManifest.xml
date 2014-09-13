@@ -26,18 +26,12 @@
             android:name=".LogInActivity"
             android:label="@string/title_activity_log_in" >
         </activity>
-        <activity
-            android:name=".LogInActivity"
-            android:label="@string/title_activity_log_in_activityy" >
-        </activity>
+       
         <activity
             android:name=".SignUpActivity"
             android:label="@string/title_activity_sign_up" >
         </activity>
-        <activity
-            android:name=".LogInActivity2"
-            android:label="@string/title_activity_log_in_activity2" >
-        </activity>
+     
     </application>
 
 </manifest>

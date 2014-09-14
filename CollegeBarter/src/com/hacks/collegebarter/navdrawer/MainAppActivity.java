@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
@@ -14,6 +15,7 @@ import com.hacks.collegebarter.fragments.CartFragment;
 import com.hacks.collegebarter.fragments.FollowingFragment;
 import com.hacks.collegebarter.fragments.SoldItemsFragment;
 import com.hacks.collegebarter.fragments.TrackItemsFragment;
+import com.hacks.collegebarter.loginandsignup.SignUpActivity;
 
 public class MainAppActivity extends Activity implements
 		NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -124,7 +126,14 @@ public class MainAppActivity extends Activity implements
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
+		if (id == R.id.action_sign_out) {
+			
+			//move to logIn page
+			Intent myIntent = new Intent(this,SignUpActivity.class);
+			startActivity(myIntent);
+			
+			// end current activity
+			finish(); 
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

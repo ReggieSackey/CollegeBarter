@@ -11,10 +11,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.hacks.collegebarter.R;
+import com.hacks.collegebarter.fragments.BarterCircleFragment;
 import com.hacks.collegebarter.fragments.CartFragment;
 import com.hacks.collegebarter.fragments.FollowingFragment;
+import com.hacks.collegebarter.fragments.PurchaseHistoryFragment;
 import com.hacks.collegebarter.fragments.SoldItemsFragment;
 import com.hacks.collegebarter.fragments.TrackItemsFragment;
+import com.hacks.collegebarter.fragments.TradersFragment;
 import com.hacks.collegebarter.loginandsignup.LogInActivity;
 import com.parse.ParseUser;
 
@@ -70,6 +73,15 @@ public class MainAppActivity extends Activity implements
 		case 3:
 			changeFragments = new FollowingFragment();
 			break;
+		case 4:
+			changeFragments = new PurchaseHistoryFragment();
+			break;
+		case 5:
+			changeFragments = new TradersFragment();
+			break;
+		case 6:
+			changeFragments = new BarterCircleFragment();
+			break;
 		}
 
 		fragmentManager.beginTransaction()
@@ -97,6 +109,13 @@ public class MainAppActivity extends Activity implements
 		case 4:
 			mTitle = fragmentNames[4];
 			break;
+		case 5:
+			mTitle = fragmentNames[5];
+			break;
+		case 6:
+			mTitle = fragmentNames[6];
+			break;
+
 		}
 	}
 

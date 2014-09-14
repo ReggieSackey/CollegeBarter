@@ -130,6 +130,15 @@ public class NavigationDrawerFragment extends Fragment {
 				.getResourceId(2, -3)));
 		navDrawerItems.add(new NavDrawerItems(navMenuTitles[3], navMenuIcons
 				.getResourceId(3, -4)));
+		navDrawerItems.add(new NavDrawerItems(navMenuTitles[4], navMenuIcons
+				.getResourceId(4, -5)));
+		navDrawerItems.add(new NavDrawerItems(navMenuTitles[5], navMenuIcons
+				.getResourceId(5, -6)));
+		navDrawerItems.add(new NavDrawerItems(navMenuTitles[6], navMenuIcons
+				.getResourceId(6, -7)));
+		
+		
+		
 		
 		// Set navigation bar adapter
 		adapter = new NavDrawerListAdapter(getActivity()

@@ -16,7 +16,7 @@ import com.hacks.collegebarter.fragments.FollowingFragment;
 import com.hacks.collegebarter.fragments.SoldItemsFragment;
 import com.hacks.collegebarter.fragments.TrackItemsFragment;
 import com.hacks.collegebarter.loginandsignup.LogInActivity;
-import com.hacks.collegebarter.loginandsignup.SignUpActivity;
+import com.parse.ParseUser;
 
 public class MainAppActivity extends Activity implements
 		NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -128,13 +128,13 @@ public class MainAppActivity extends Activity implements
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_sign_out) {
-			
 			//move to logIn page
-			Intent myIntent = new Intent(this,LogInActivity.class);
-			startActivity(myIntent);
+			ParseUser.logOut();
+			Intent logOutIntent = new Intent(MainAppActivity.this, LogInActivity.class);
+			startActivity(logOutIntent);
 			
 			// end current activity
-			finish(); 
+			finish();
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

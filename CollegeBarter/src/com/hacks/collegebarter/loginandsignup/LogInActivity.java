@@ -86,6 +86,7 @@ public class LogInActivity extends Activity {
 			}
 		});
 
+		// Keep user signed in till user logs out
 		currentUser = ParseUser.getCurrentUser();
 		if (currentUser != null) {
 			Intent logIn = new Intent(LogInActivity.this, MainAppActivity.class);

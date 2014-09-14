@@ -15,6 +15,7 @@ import com.hacks.collegebarter.fragments.CartFragment;
 import com.hacks.collegebarter.fragments.FollowingFragment;
 import com.hacks.collegebarter.fragments.SoldItemsFragment;
 import com.hacks.collegebarter.fragments.TrackItemsFragment;
+import com.hacks.collegebarter.loginandsignup.LogInActivity;
 import com.hacks.collegebarter.loginandsignup.SignUpActivity;
 
 public class MainAppActivity extends Activity implements
@@ -129,7 +130,7 @@ public class MainAppActivity extends Activity implements
 		if (id == R.id.action_sign_out) {
 			
 			//move to logIn page
-			Intent myIntent = new Intent(this,SignUpActivity.class);
+			Intent myIntent = new Intent(this,LogInActivity.class);
 			startActivity(myIntent);
 			
 			// end current activity

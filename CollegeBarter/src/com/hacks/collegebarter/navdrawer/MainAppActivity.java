@@ -12,7 +12,6 @@ import android.view.MenuItem;
 import com.hacks.collegebarter.R;
 import com.hacks.collegebarter.fragments.CartFragment;
 import com.hacks.collegebarter.fragments.FollowingFragment;
-import com.hacks.collegebarter.fragments.PlaceholderFragment;
 import com.hacks.collegebarter.fragments.SoldItemsFragment;
 import com.hacks.collegebarter.fragments.TrackItemsFragment;
 
@@ -71,7 +70,8 @@ public class MainAppActivity extends Activity implements
 		}
 
 		fragmentManager.beginTransaction()
-				.replace(R.id.container, PlaceholderFragment.newInstance(position )).commit();
+				.replace(R.id.container, changeFragments).commit();
+	//	onSectionAttached(changeFragments.getArguments().getInt(CartFragment.ARG_SECTION_NUMBER));
 		getActionBar().setTitle(mTitle);
 
 	}

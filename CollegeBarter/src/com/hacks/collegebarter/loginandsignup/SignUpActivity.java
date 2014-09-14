@@ -33,6 +33,8 @@ public class SignUpActivity extends Activity {
 		// Parse Initialize
 		Parse.initialize(this, "yGAHbDZTw9xuh1NHC5YMLoif5u9qgYoOGak2nd62",
 				"BY79vcfUFtS9WTRCdg9Vf2ovnLnYzPnYk2waPwbq");
+		
+		// Reference views 
 		userNameField = (EditText) findViewById(R.id.signUpUserNameText);
 		emailField = (EditText) findViewById(R.id.signUpEmailText);
 		passwordField = (EditText) findViewById(R.id.signUpPasswordText);

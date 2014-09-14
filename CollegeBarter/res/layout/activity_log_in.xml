@@ -9,11 +9,20 @@
     tools:context="com.hacks.collegebarter.loginandsignup.LogInActivity"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/responseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:text="@string/error_message" />
+
     <EditText
         android:id="@+id/usernameField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="114dp"
+        android:layout_marginTop="55dp"
         android:ems="10"
         android:hint="@string/Username"
         android:inputType="textPersonName" />

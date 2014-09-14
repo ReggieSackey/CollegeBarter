@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hacks.collegebarter.R;
@@ -22,6 +23,7 @@ public class LogInActivity extends Activity {
 
 	EditText userNameField;
 	EditText passwordField;
+	TextView cautionText;
 	Button signUpButton;
 	Button logInButton;
 	String usernameText;
@@ -36,6 +38,7 @@ public class LogInActivity extends Activity {
 		// set widget id's
 		userNameField = (EditText) findViewById(R.id.usernameField);
 		passwordField = (EditText) findViewById(R.id.passwordField);
+		cautionText = (TextView) findViewById(R.id.responseText);
 		signUpButton = (Button) findViewById(R.id.signUpButton);
 		logInButton = (Button) findViewById(R.id.logInId);
 
@@ -56,6 +59,7 @@ public class LogInActivity extends Activity {
 
 		/* When logIn button is clicked */
 
+
 		logInButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				// get strings from respective EditTextFields
@@ -75,11 +79,14 @@ public class LogInActivity extends Activity {
 								}// if user exist
 								else {
 									// if userName not found
-									if (e.getCode() == ParseException.LINKED_ID_MISSING)
-										;
-									Toast.makeText(LogInActivity.this,
-											"account does not exist",
-											Toast.LENGTH_LONG).show();
+									if (e.getCode() == ParseException.LINKED_ID_MISSING) {
+
+										Toast.makeText(LogInActivity.this,
+												"account does not exist",
+												Toast.LENGTH_LONG).show();
+										//make text in causionText view visible
+										cautionText.setVisibility(View.VISIBLE);
+									}
 								}
 							}
 						});

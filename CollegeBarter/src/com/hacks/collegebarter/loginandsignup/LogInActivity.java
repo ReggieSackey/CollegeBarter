@@ -21,14 +21,14 @@ import com.parse.ParseUser;
 public class LogInActivity extends Activity {
 	/* Variables storing widget id's */
 
-	EditText userNameField;
-	EditText passwordField;
-	TextView cautionText;
-	Button signUpButton;
-	Button logInButton;
-	String usernameText;
-	String passwordText;
-	ParseUser currentUser;
+	private EditText userNameField;
+	private EditText passwordField;
+	private TextView cautionText;
+	private Button signUpButton;
+	private Button logInButton;
+	private String usernameText;
+	private String passwordText;
+	private ParseUser currentUser;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,7 @@ public class LogInActivity extends Activity {
 		cautionText = (TextView) findViewById(R.id.responseText);
 		signUpButton = (Button) findViewById(R.id.signUpButton);
 		logInButton = (Button) findViewById(R.id.logInId);
+		cautionText.setVisibility(View.INVISIBLE);
 
 		// Parse Initialize
 		Parse.initialize(this, "yGAHbDZTw9xuh1NHC5YMLoif5u9qgYoOGak2nd62",
@@ -59,7 +60,6 @@ public class LogInActivity extends Activity {
 
 		/* When logIn button is clicked */
 
-
 		logInButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				// get strings from respective EditTextFields
@@ -69,7 +69,16 @@ public class LogInActivity extends Activity {
 				ParseUser.logInInBackground(usernameText, passwordText,
 						new LogInCallback() {
 							public void done(ParseUser user, ParseException e) {
+
+								if (usernameText.isEmpty()
+										|| passwordText.isEmpty()) {
+									cautionText.setVisibility(View.VISIBLE);
+								} else {
+									cautionText.setVisibility(View.INVISIBLE);
+								}
+
 								if (user != null) {
+
 									// move to main
 									Intent logInIntent = new Intent(
 											LogInActivity.this,
@@ -84,8 +93,7 @@ public class LogInActivity extends Activity {
 										Toast.makeText(LogInActivity.this,
 												"account does not exist",
 												Toast.LENGTH_LONG).show();
-										//make text in causionText view visible
-										cautionText.setVisibility(View.VISIBLE);
+
 									}
 								}
 							}

@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.hacks.collegebarter.R;
+import com.hacks.collegebarter.Utils.LogInActivity;
 import com.hacks.collegebarter.fragments.BarterCircleFragment;
 import com.hacks.collegebarter.fragments.CartFragment;
 import com.hacks.collegebarter.fragments.FollowingFragment;
@@ -18,7 +19,6 @@ import com.hacks.collegebarter.fragments.PurchaseHistoryFragment;
 import com.hacks.collegebarter.fragments.SoldItemsFragment;
 import com.hacks.collegebarter.fragments.TrackItemsFragment;
 import com.hacks.collegebarter.fragments.TradersFragment;
-import com.hacks.collegebarter.loginandsignup.LogInActivity;
 import com.parse.ParseUser;
 
 public class MainAppActivity extends Activity implements

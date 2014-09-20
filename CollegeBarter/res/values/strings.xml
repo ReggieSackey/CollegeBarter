@@ -9,6 +9,7 @@
     <string name="action_sign_in">Sign In</string>
     <string name="title_activity_log_in">LogInActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="item_desc">Description: </string>
     <string name="Username">Username</string>
     <string name="Password">Password</string>
     <string name="user_logIn">Log In</string>
@@ -16,7 +17,7 @@
     <string name="Email">Email</string>
     <string name="title_activity_cart_fragment">CartFragment</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
-     <string name="error_message">Invalid Username or Password!</string>
+    <string name="error_message">Invalid Username or Password!</string>
     <string name="sign_out">Sign out</string>
 
     <array name="item_list">
@@ -29,7 +30,6 @@
         <item name="user_trusted_traders">+Tray\'ders</item>
         <item name="user_profile">My Profile</item>
     </array>
-    
     <array name="navdrawer_icons">
         <item name="ic_cart">@drawable/ic_cart</item>
         <item name="ic_cash">@drawable/ic_banknote</item>
@@ -38,7 +38,6 @@
         <item name="ic_purchase_history">@drawable/ic_purchase_history</item>
         <item name="ic_barter_circle">@drawable/ic_barter_circle</item>
         <item name="ic_traders">@drawable/ic_traders</item>
-        
     </array>
 
 </resources>

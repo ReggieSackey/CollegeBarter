@@ -22,7 +22,7 @@
            
         </activity>
         <activity
-            android:name=".loginandsignup.LogInActivity"
+            android:name="com.hacks.collegebarter.Utils.LogInActivity"
             android:label="@string/title_activity_log_in" >
              <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,8 +31,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".loginandsignup.SignUpActivity"
-            android:label="@string/title_activity_sign_up" android:parentActivityName="com.hacks.collegebarter.loginandsignup.LogInActivity">
+            android:name="com.hacks.collegebarter.Utils.SignUpActivity"
+            android:label="@string/title_activity_sign_up" android:parentActivityName="com.hacks.collegebarter.Utils.LogInActivity">
         </activity>
         <activity
             android:name=".CartFragment"

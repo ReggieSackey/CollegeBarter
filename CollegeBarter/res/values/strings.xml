@@ -9,7 +9,10 @@
     <string name="action_sign_in">Sign In</string>
     <string name="title_activity_log_in">LogInActivity</string>
     <string name="hello_world">Hello world!</string>
-    <string name="item_desc">Description: </string>
+    <string name="item_desc_label">Description: </string>
+    <string name="item_desciption"> The Item Description </string>
+    <string name="item_price_text">Price: $ </string>
+    <string name="item_price_value">100</string>
     <string name="Username">Username</string>
     <string name="Password">Password</string>
     <string name="user_logIn">Log In</string>
@@ -21,6 +24,7 @@
     <string name="sign_out">Sign out</string>
 
     <array name="item_list">
+        <item name="user_tradeboard">TradeBoard</item>
         <item name="user_cart">My Cart</item>
         <item name="user_sold_items">Items Sold</item>
         <item name="user_items_tracked">Track \'Em</item>
@@ -31,6 +35,7 @@
         <item name="user_profile">My Profile</item>
     </array>
     <array name="navdrawer_icons">
+        <item name="ic_tradeboard">@drawable/ic_tradeboard</item>
         <item name="ic_cart">@drawable/ic_cart</item>
         <item name="ic_cash">@drawable/ic_banknote</item>
         <item name="ic_tag_tracking">@drawable/ic_tag_tracking</item>

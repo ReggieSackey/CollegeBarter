@@ -19,7 +19,7 @@ public class SoldItemsFragment extends Fragment {
 	// SoldItemsFragment constructor
 	public SoldItemsFragment() {
 		Bundle sectionTracker = new Bundle();
-		sectionTracker.putInt("section_number", 1);
+		sectionTracker.putInt("section_number", 2);
 		this.setArguments(sectionTracker);
 	}
 

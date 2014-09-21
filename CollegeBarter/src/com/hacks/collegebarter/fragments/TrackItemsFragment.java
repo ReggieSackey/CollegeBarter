@@ -17,7 +17,7 @@ public class TrackItemsFragment extends Fragment {
 	// TrackitemsFragment Constructor
 	public TrackItemsFragment() {
 		Bundle sectionTracker = new Bundle();
-		sectionTracker.putInt("section_number", 2);
+		sectionTracker.putInt("section_number", 3);
 		this.setArguments(sectionTracker);
 	}
 

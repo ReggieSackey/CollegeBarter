@@ -10,13 +10,14 @@ import android.view.ViewGroup;
 import com.hacks.collegebarter.R;
 import com.hacks.collegebarter.navdrawer.MainAppActivity;
 
-public class PurchaseHistoryFragment extends Fragment {
+public class TradeboardFragment extends Fragment{
+
 	public static final String ARG_SECTION_NUMBER = "section_number";
 
 	// Following constructor
-	public PurchaseHistoryFragment() {
+	public TradeboardFragment() {
 		Bundle bundle = new Bundle();
-		bundle.putInt(ARG_SECTION_NUMBER, 5);
+		bundle.putInt(ARG_SECTION_NUMBER, 0);
 		this.setArguments(bundle);
 	}
 
@@ -24,9 +25,8 @@ public class PurchaseHistoryFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		View rootView = inflater.inflate(R.layout.purchase_history,
-				container, false);
-
+		View rootView = inflater.inflate(R.layout.tradeboard_fragment, container,
+				false);
 		return rootView;
 	}
 

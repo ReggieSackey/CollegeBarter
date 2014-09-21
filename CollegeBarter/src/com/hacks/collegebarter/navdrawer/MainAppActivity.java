@@ -18,6 +18,7 @@ import com.hacks.collegebarter.fragments.FollowingFragment;
 import com.hacks.collegebarter.fragments.PurchaseHistoryFragment;
 import com.hacks.collegebarter.fragments.SoldItemsFragment;
 import com.hacks.collegebarter.fragments.TrackItemsFragment;
+import com.hacks.collegebarter.fragments.TradeboardFragment;
 import com.hacks.collegebarter.fragments.TradersFragment;
 import com.parse.ParseUser;
 
@@ -62,24 +63,27 @@ public class MainAppActivity extends Activity implements
 		// Case to change fragments on item selected from the nav drawer
 		switch (position) {
 		case 0:
-			changeFragments = new CartFragment();
+			changeFragments = new TradeboardFragment();
 			break;
 		case 1:
-			changeFragments = new SoldItemsFragment();
+			changeFragments = new CartFragment();
 			break;
 		case 2:
-			changeFragments = new TrackItemsFragment();
+			changeFragments = new SoldItemsFragment();
 			break;
 		case 3:
-			changeFragments = new FollowingFragment();
+			changeFragments = new TrackItemsFragment();
 			break;
 		case 4:
-			changeFragments = new PurchaseHistoryFragment();
+			changeFragments = new FollowingFragment();
 			break;
 		case 5:
-			changeFragments = new TradersFragment();
+			changeFragments = new PurchaseHistoryFragment();
 			break;
 		case 6:
+			changeFragments = new TradersFragment();
+			break;
+		case 7:
 			changeFragments = new BarterCircleFragment();
 			break;
 		}
@@ -114,6 +118,9 @@ public class MainAppActivity extends Activity implements
 			break;
 		case 6:
 			mTitle = fragmentNames[6];
+			break;
+		case 7:
+			mTitle = fragmentNames[7];
 			break;
 
 		}

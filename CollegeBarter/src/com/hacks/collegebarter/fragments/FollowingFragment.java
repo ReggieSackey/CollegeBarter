@@ -17,7 +17,7 @@ public class FollowingFragment extends Fragment {
 	// Following constructor
 	public FollowingFragment() {
 		Bundle bundle = new Bundle();
-		bundle.putInt(ARG_SECTION_NUMBER, 3);
+		bundle.putInt(ARG_SECTION_NUMBER, 4);
 		this.setArguments(bundle);
 	}
 

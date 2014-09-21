@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.SimpleAdapter;
 
 import com.hacks.collegebarter.R;
 import com.hacks.collegebarter.navdrawer.MainAppActivity;
@@ -18,7 +17,7 @@ public class CartFragment extends Fragment {
 	// Constructor for CartFragment
 	public CartFragment() {
 		Bundle sectionTracker = new Bundle();
-		sectionTracker.putInt("section_number", 0);
+		sectionTracker.putInt("section_number", 1);
 		this.setArguments(sectionTracker);
 	}
 
@@ -28,12 +27,11 @@ public class CartFragment extends Fragment {
 
 		View rootView = inflater.inflate(R.layout.cart_fragment, container,
 				false);
-		
-	
 
 		return rootView;
 	}
 
+	
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
